@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallpaper Collection | Sanskar</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #ffffff;
+      color: #000;
+      text-align: center;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #fff;
+    }
+
+    .logo {
+      font-size: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      margin-left: 20px;
+      font-size: 12px;
+    }
+
+    h1 {
+      margin: 40px 0 20px;
+      font-size: 16px;
+    }
+
+    .wallpaper-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .wallpaper-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .wallpaper-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .wallpaper-item img {
+      width: 300px;
+      height: auto;
+      border-radius: 6px;
+      transition: transform 0.4s ease;
+    }
+
+    .wallpaper-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: black;
+      color: white;
+      font-size: 10px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #333;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 10px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Sanskar</div>
+    <nav>
+      <a href="sanskar.html">Home</a>
+      <a href="#">Wallpaper</a>
+      <a href="#">About us</a>
+    </nav>
+  </header>
+
+  <h1>WALLPAPER COLLECTION</h1>
+
+  <div class="wallpaper-grid">
+    <div class="wallpaper-item">
+      <img src="circle.png" alt="Wallpaper 1">
+      <a href="circle.png" download class="download-btn">Download</a>
+    </div>
+    <div class="wallpaper-item">
+      <img src="box.png" alt="Wallpaper 2">
+      <a href="box.png" download class="download-btn">Download</a>
+    </div>
+    <div class="wallpaper-item">
+      <img src="box2.png" alt="Wallpaper 3">
+      <a href="box2.png" download class="download-btn">Download</a>
+    </div>
+   
+  </div>
+
+  <footer>
+    copyright sanskar 2025
+  </footer>
+</body>
+</html>
